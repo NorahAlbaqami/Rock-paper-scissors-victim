@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="img/hyuk.jpg" />
+    <title>Rock paper scissors victim</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+
+        <nav id="navigationBar">
+            <h1> Rock paper scissors victim </h1>
+            <ul>
+                <li>
+                    <a href="#" class="link">Home</a>
+                </li>
+
+                <li>
+                    <a href="blackHistory.html" class="link">black History</a>
+
+            </ul>
+        </nav>
+
+    </header>
+    <aside>
+        <div class="musicFather">
+            <audio id="music">
+                <source src="audio/song.mp3" />
+            </audio>
+            <button class="play musicbuttons" onclick="playmusic()"> <img src="img/on.png"></button>
+            <button class="stop musicbuttons" onclick="stopmusic()"> <img src="img/off.png"></button>
+        </div>
+    </aside>
+
+    <main>
+
+        <div class="hyukMessage">
+            <img class="child1 " src="img/hyuc3.jpg">
+            <img class="child2 " src="img/hyukmm.jpg">
+        </div>
+        <div> <h2 class="jun"> Choose rock , paper or scissors ✊ ✋ ✌️  you VS computer who will win ? </h2> </div>
+        <div class="button-container">
+            <button class="item" id="rock" value="rock"> <img src="img/r.png"> </button>
+            <button class="item" id="paper" value="paper"> <img src="img/p.png"> </button>
+            <button class="item" id="scissor" value="scissor"> <img src="img/s.png"> </button>
+        </div>
+        <div class="hands">
+            <img class="comp-hand pic" src="img/r.png">
+            <img class="hyuk-hand pic" src="img/r.png">
+        </div>
+        <div class="score">
+            <div class="computer">
+                <h2>Computer</h2>
+                <p id="computer"> </p>
+            </div>
+            
+            <div class="hyuk">
+                <h2> You</h2>
+                <p id="you" > </p>
+            </div>
+            
+        </div>
+        
+        <div class="reslFather">
+            <div class="result"></div>
+        </div>
+    </main>
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,238 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Serif;
+}
+body{
+    background-color: black;
+}
+
+header{
+    
+height: 100px;
+  
+}
+h1{ 
+    /* margin-top: 10px; */
+    color: white;
+    text-align: left;
+    animation: moving 3s  linear infinite;
+    animation-delay: -50s;
+}
+@keyframes moving{
+   0%{
+     
+ color: white;
+  /* transform: translateX(-100%); */
+  }
+   25%{
+     
+ color: #F06292;
+   }
+   50%{
+     
+ color: #4DD0E1;
+   }
+   100%{
+     
+ color:#4A148C;
+ /* transform: translateX(100%); */
+   }
+   
+}
+/* nav////////////////////////////////////////////////////////// */
+#navigationBar {
+  background:none;
+  height:auto;
+  text-align:right;
+  width:100%;
+}
+#navigationBar > ul > li {
+  display:inline;
+}
+#navigationBar > ul > li > a
+{
+  color:#fff;
+  padding:0px 15px;
+  text-decoration:none;
+  transition: color 0.3s ease-in;
+}
+#navigationBar > ul > li > a:hover {
+  box-shadow: 0 5px 50px 0  #15f4ee inset, 0 5px 50px 0 #15f4ee;
+  border-radius: 15px;
+}
+/* /////////////////////////////////////////////////////////////////////////// */
+aside{
+
+  background-image: url(img/nHyuk.jpg);  
+  background-repeat: no-repeat;
+  background-size: contain;
+    height: 600px;   
+    width: 300px;
+    float: left;
+}
+.musicFather{
+  display: grid;
+  grid-template-rows: repeat(4, 1fra );
+  justify-content: center;
+  align-content: center;
+  grid-gap:20px ;
+  
+}
+.musicFather button{
+  height: 60px;
+  width:70px;
+  border: 5px solid #15f4ee;
+  border-radius: 15px;
+  margin: 5px;
+  font-weight: bold;
+}
+.musicFather  .play{
+  margin-top: 130px ;
+  grid-row: 2/2;
+
+}
+.musicFather .stop{
+ grid-row: 4/4;
+}
+.musicbuttons:hover{
+  box-shadow: 0 5px 50px 0  #15f4ee inset, 0 5px 50px 0 #15f4ee;
+}
+/* ////////////////////////////////////////////////////////////////////// */
+
+main{
+    display: grid;
+    grid-template-columns: repeat(4,1fra);
+    grid-template-rows: repeat(4,1fra);
+    /* height: 400px;    */
+}
+.jun{
+  color: white;
+  text-align: center;
+}
+/* img //////////////////////////////////////////////////////////////////// */
+.hyukMessage{
+  display: grid;
+grid-template-columns: repeat(4 ,1fra);
+}
+
+.hyukMessage img{
+  height:200px ;
+  width:370px;
+  border: 5px solid black;
+  border-radius: 15px;
+}
+.hyukMessage .child1{
+  grid-column-start:1 ;
+  grid-column-end:2 ;
+}
+.hyukMessage .child2{
+  grid-column-start:3 ;
+  grid-column-end:4 ;
+}
+/* button///////////////////////////////////////////////////////////////////// */
+.button-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+button img{
+  height: 50px;
+  width: 50px;
+  
+}
+
+.button-container > .item{
+  border: 5px solid #15f4ee;
+  border-radius: 15px;
+  margin: 5px;
+  color: white;
+}
+.item:hover{
+  box-shadow: 0 5px 50px 0  #15f4ee inset, 0 5px 50px 0 #15f4ee;
+}
+/* pic for hands //////////////////////////////////////////////////////////*/
+.hands{
+  display: grid;
+  grid-template-columns: repeat(4, 1fra);
+  
+}
+.hands img{
+  height: 150px;
+  width:200px;
+}
+.hands .comp-hand{
+  grid-column-start:2 ;
+  grid-column-end:2 ;
+  transform:  rotate(90deg);
+}
+.hands .hyuk-hand{
+  grid-column-start:3 ;
+  grid-column-end:3 ;
+ transform:  rotate(270deg);
+}
+/* score/////////////////////////////////////////////////////////////////////////////////// */
+.score{
+  display: inline-grid;
+  grid-template-columns:  1fra 1fra 1fra 1fra;
+  
+  
+}
+.score > div{
+  margin-top:30px ;
+  height: 50px;
+  width: 110px;
+  text-align: center;
+  background-color: white;
+  border: 5px solid #15f4ee;
+  border-radius: 15px;
+  
+}
+.computer{
+  grid-column-start:2 ;
+  grid-column-end:2 ;
+}
+.hyuk{
+  grid-column-start:3 ;
+  grid-column-end:4 ;
+}
+
+/* result ////////////////////////////////////////////////////////////////////// */
+.reslFather{
+  display: inline-grid;
+  grid-template-columns: repeat(4, 1fra); 
+}
+
+.result{
+  color:fuchsia;
+  grid-column-start:2 ;
+  grid-column-end:3 ;
+  height:50px;
+  width: 80px;
+  background-color: white;
+  border: 5px solid #15f4ee;
+  border-radius: 15px;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 10px;
+}
+@media screen and (max-width:400px){
+   .hyukMessage img{
+     width: 94%;
+     margin-bottom:10% ;
+   }
+   .pic{
+    width: 94%;
+    margin-bottom:1% ;
+   }
+   nav ul {
+    margin: 0%;
+    padding: 0%;
+
+  }
+   nav ul li{
+     display: block;
+
+   }
+}
+
+
