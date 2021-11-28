@@ -1,5 +1,5 @@
 # RPS-Victim
-[Rock paper scissors victim](https://pages.git.generalassemb.ly/xlightx/RPS-Victim/)
+[Rock paper scissors victim]( https://norahalbaqami.github.io/Rock-paper-scissors-victim/)
 
 
 Super junior is a global music band and they making life decisions by playing rock paper scissors ,and the loser will do anything for the rest members maybe cleaning or carry them on his back  , sometimes they cross the lines and they make the loser wear strange clothes at the airport , There is only one victim in this game, Eunhyuk
